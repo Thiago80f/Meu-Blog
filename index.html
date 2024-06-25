@@ -1,0 +1,187 @@
+
+   <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Blog Dinâmico</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Meu Blog </h1>
+        <p>@thiago de amorim moreira</p>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Posts</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <section id="about">
+        <h2>Sobre Informática</h2>
+        <h3>A programação é uma arte que transcende linhas de código e se entrelaça com a criatividade humana. Nos seus bastidores digitais, mundos inteiros ganham vida através de sequências lógicas meticulosamente estruturadas. Cada programa é como uma história que se desdobra, com personagens (os dados), cenários (os algoritmos) e tramas (as funcionalidades) meticulosamente escritos para criar uma experiência única.
+
+            No coração da programação reside a habilidade de resolver problemas complexos com soluções elegantes. Os programadores são os arquitetos digitais, construindo pontes entre o humano e o computacional, transformando ideias abstratas em realidade tangível. Cada linha de código é uma decisão, uma escolha entre diversas possibilidades, onde a eficiência e a clareza são tão cruciais quanto a funcionalidade.
+            
+            Entretanto, a programação não é apenas um exercício de lógica e precisão. É também um campo fértil para a inovação e a criatividade. Novas linguagens, frameworks e paradigmas emergem constantemente, expandindo as fronteiras do que é possível criar. Da inteligência artificial à realidade virtual, da automação à segurança cibernética, a programação é o tecido conectivo que sustenta o avanço tecnológico em todas as áreas.
+            
+            Mas não se engane: dominar a arte da programação não é tarefa simples. Requer dedicação, persistência e uma mente aberta para aprender continuamente. É um universo em constante evolução, onde até mesmo os veteranos estão sempre aprendendo algo novo.
+            
+            Portanto, a programação é muito mais do que simplesmente escrever código. É uma jornada intelectual, um desafio criativo e uma oportunidade de moldar o futuro digital. É o idioma comum de uma era onde a tecnologia permeia todos os aspectos da vida moderna. Seja você um novato curioso ou um mestre experiente, a programação oferece um caminho emocionante para explorar e transformar o mundo ao nosso redor.
+            
+            
+            
+            
+            
+            </h3>
+        <div class="photo-gallery">
+            <img src="https://s2.glbimg.com/vHByUsV9fEnW-5HlpmLm0v-6cZo=/e.glbimg.com/og/ed/f/original/2020/11/17/como-escolher-o-computador-ideal-para-home-office.png" alt="Computers">
+            <img src="https://www.odebate.com.br/wp-content/uploads/2022/09/19092022codigos.jpg" alt="Coding">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMkI2mgoKOLCsvPbq-AC07W8Z9uzqFDG5Gz0g4FKdD0IK8-S2X1b6dV8x7bTEGgMuYLIE&usqp=CAU" alt="Network">
+
+
+<div class="social-icons">
+    <a href="" target="_blank"><img src="https://www.meioemensagem.com.br/wp-content/uploads/2024/02/Facebook_Credito_AdobeStock.jpg" alt="Facebook"></a>
+    <a href="" target="_blank"><img src="https://www.infomoney.com.br/wp-content/uploads/2023/07/elon-musk-twitter-muda-logo-x.jpg?fit=1024%2C683&quality=50&strip=all" alt="Twitter"></a>
+    <a href="https://www.instagram.com/th_informatica__?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><img src="https://www.remessaonline.com.br/blog/wp-content/uploads/2022/04/o-que-e-instagram-1170x780.jpg.webp" alt="Instagram"></a>
+</div>
+
+
+
+<div class="tags">
+    <span class="tag">Tecnologia</span>
+    <span class="tag">Programação</span>
+</div>
+
+
+
+
+
+
+<!-- No final da lista de posts -->
+<div class="pagination">
+    <a href="#" class="prev">&lt; Anterior</a>
+    <span class="current">1</span>
+    <a href="#">2</a>
+    <a href="#">3</a>
+    <a href="#" class="next">Próximo &gt;</a>
+</div>
+
+
+<div class="rating">
+    <input type="radio" id="star5" name="rating" value="5"><label for="star5"></label>
+    <input type="radio" id="star4" name="rating" value="4"><label for="star4"></label>
+    <input type="radio" id="star3" name="rating" value="3"><label for="star3"></label>
+    <input type="radio" id="star2" name="rating" value="2"><label for="star2"></label>
+    <input type="radio" id="star1" name="rating" value="1"><label for="star1"></label>
+</div>
+
+
+
+<!-- Dentro do HTML de um post -->
+<div class="progress-container">
+    <div class="progress-bar"></div>
+</div>
+
+
+
+
+
+        </div>
+
+
+
+
+<section id="comments">
+    <h3>Comentários</h3>
+    <ul id="comment-list">
+        
+    </ul>
+    <form id="comment-form">
+        <label for="name">Seu Nome:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="comment">Seu Comentário:</label>
+        <textarea id="comment" name="comment" rows="4" required></textarea>
+        <button type="submit">Enviar Comentário</button>
+
+<form action="seu-backend-de-newsletter" method="post">
+    <label for="email">Receba nossas novidades:</label>
+    <input type="email" id="email" name="email" placeholder="Seu melhor email" required>
+    <button type="submit">Inscrever-se</button>
+</form>
+
+<form action="#" method="get">
+    <input type="search" id="search" name="search" placeholder="Buscar Posts">
+    <button type="submit">Buscar</button>
+</form>
+<!-- Dentro do HTML de um post -->
+<button onclick="traduzirPost()">Traduzir</button>
+<p id="texto-original">Conteúdo original do post...</p>
+<p id="texto-traduzido" style="display:none;">Conteúdo traduzido do post...</p>
+
+    </form>
+</section>
+
+<!-- No HTML de um post -->
+<section id="related-posts">
+    <h3>Posts Relacionados</h3>
+    <ul>
+        <li><a href="#">Título do Post Relacionado</a></li>
+        <li><a href="#">Outro Título do Post Relacionado</a></li>
+        <!-- Adicione mais posts conforme necessário -->
+    </ul>
+</section>
+
+
+<section id="faq">
+    <h3>Perguntas Frequentes</h3>
+    <div class="accordion">
+        <button class="accordion-btn">Como posso aprender programação?</button>
+        <div class="accordion-panel">
+            <p>Existem muitos recursos online, como cursos, tutoriais e plataformas de aprendizado.</p>
+        </div>
+
+        <button class="accordion-btn">Qual é a linguagem de programação mais popular?</button>
+        <div class="accordion-panel">
+            <p>Atualmente, Python e JavaScript são muito populares devido à sua versatilidade.</p>
+        </div>
+
+        <!-- Adicione mais perguntas e respostas conforme necessário -->
+    </div>
+</section>
+
+
+
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Meu Blog Dinâmico. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+<!-- Dentro da seção de galeria de fotos -->
+<div class="slideshow-container">
+    <div class="mySlides">
+        <img src="https://abstartups.com.br/wp-content/uploads/2018/10/Qual-a-tecnologia.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+        <img src="https://img.odcdn.com.br/wp-content/uploads/2023/12/Tecnologia-2024.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+        <img src="https://portal-talenti.curriculum.com.br/wp-content/uploads/2018/08/13192111430391-t1200x480.png" style="width:100%">
+    </div>
+
+    <!-- Botões de navegação -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+
+<div id='calendar'></div>
+
+</body>
+</html>
